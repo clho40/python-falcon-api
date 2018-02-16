@@ -1,4 +1,4 @@
-# Python : Falcon API - MongoEngine - MongoDB - PyTest - Waitress
+# Python : Falcon RESTFul API - MongoEngine - MongoDB - PyTest - Waitress
 
 To start API server,
 
@@ -9,12 +9,12 @@ pip install -r requirements.txt
 
 2. Start MongoDB server. Update connection string in /src/models.py if needed
 ```Python
-connect('configapi') # Modify this if needed. Refer to Falcon documentation
+connect('configapi') # Modify this if needed. Refer to Falcon's documentation
 ```
 
 3. Navigate to /src and start Waitress server (for Windows only)
 ```
-cd /src
+cd src
 waitress-serve --port=8000 app:app
 ```
 
