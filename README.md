@@ -7,11 +7,16 @@ To start API server,
 pip install -r requirements.txt
 ```
 
-2. Navigate to /src and start Waitress server
-```
-cd /src
-waitress-serve --port==8000 app:app
+2. Start MongoDB server. Update connection string in /src/models.py if needed
+```Python
+connect('configapi') # Modify this if needed. Refer to Falcon documentation
 ```
 
-3. Browse the URL using browser or Postman Chrome App
+3. Navigate to /src and start Waitress server (for Windows only)
+```
+cd /src
+waitress-serve --port=8000 app:app
+```
+
+4. Browse the URL using browser or Postman Chrome App
 
