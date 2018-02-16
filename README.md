@@ -27,3 +27,16 @@ cd src
 pytest
 ```
 
+## To generate coverage report with PyTest
+1. Install **pytest-cov**
+```
+pip install pytest-cov
+```
+
+2. Navigate to **/src** and run PyTest as follow
+```
+cd src
+pytest --cov=app
+```
+
+
