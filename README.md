@@ -1,6 +1,6 @@
 # Python : Falcon RESTFul API - MongoEngine - MongoDB - PyTest - Waitress
 
-To start API server,
+## To start API server,
 
 1. Install the required dependencies from requirements.txt
 ```
@@ -19,4 +19,11 @@ waitress-serve --port=8000 app:app
 ```
 
 4. Browse the URL using browser or Postman Chrome App
+
+## To run test using PyTest
+1. Navigate to /src and run Pytest. PyTest will run test_api.py automatically
+```
+cd src
+pytest
+```
 
